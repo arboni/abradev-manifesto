@@ -1,0 +1,72 @@
+name: ✍️ Assinatura do Manifesto
+description: Assine o Manifesto ABRADEV adicionando seus dados por meio desta Issue
+title: "Assinatura: [Seu Nome Completo ou Nick]"
+labels: ["assinatura", "manifesto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por apoiar a **ABRADEV** e a defesa do trabalho remoto sustentável e eficiente para os profissionais de TI no Brasil!
+  - type: input
+    id: nome
+    attributes:
+      label: Nome Completo ou Como deseja ser identificado
+      placeholder: Ex: Maria Silva ou dev_ninja
+    validations:
+      required: true
+  - type: dropdown
+    id: estado
+    attributes:
+      label: Estado (UF)
+      options:
+        - AC
+        - AL
+        - AP
+        - AM
+        - BA
+        - CE
+        - DF
+        - ES
+        - GO
+        - MA
+        - MT
+        - MS
+        - MG
+        - PA
+        - PB
+        - PR
+        - PE
+        - PI
+        - RJ
+        - RN
+        - RS
+        - RO
+        - RR
+        - SC
+        - SP
+        - SE
+        - TO
+        - Exterior / Outro
+    validations:
+      required: true
+  - type: input
+    id: cargo
+    attributes:
+      label: Cargo / Especialidade / Atuação
+      placeholder: Ex: Desenvolvedor Back-end, Analista de Sistemas, Tech Lead, Estudante
+    validations:
+      required: true
+  - type: input
+    id: perfil
+    attributes:
+      label: Perfil GitHub ou LinkedIn (Opcional)
+      placeholder: Ex: https://github.com/seu-usuario ou https://linkedin.com/in/seu-perfil
+    validations:
+      required: false
+  - type: checkboxes
+    id: consentimento
+    attributes:
+      label: Concordância
+      options:
+        - label: Concordo com os termos do Manifesto ABRADEV e autorizo a inclusão do meu nome na lista pública de signatários.
+          required: true

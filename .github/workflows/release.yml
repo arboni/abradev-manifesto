@@ -1,0 +1,30 @@
+name: Release Manifesto PDF
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ github.ref_name }}
+          body: |
+            📄 **Manifesto ABRADEV - Versão Oficial em PDF**
+
+            Faça o download do PDF oficial abaixo para distribuição e leitura offline.
+          files: |
+            Manifesto_ABRADEV_Home_Office.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
