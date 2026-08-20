@@ -6,9 +6,7 @@ Ao adicionar seu nome a esta lista via *Pull Request*, você declara seu apoio a
 
 | # | Nome / Nick | Cargo / Especialidade | Estado | Perfil (GitHub/LinkedIn) |
 |---|-------------|-----------------------|--------|--------------------------|
-| 1 | Fundadores ABRADEV | Engenharia de Software | SC | [@abradev](https://github.com/abradev) |
-| 2 | *Seu Nome Aqui* | *Seu Cargo* | *UF* | [@seu-usuario](https://github.com/) |
-| 3 | *Loir Arboni* | *Presidente* | *SC* | [@arboniguitar](https://github.com/) |
+| 2 | *Fundador ABRADEV* | Analista de Sistemas* | *SC* | [@arboniguitar](https://github.com/arboni/abradev-manifesto.git) |
 
 ---
 
